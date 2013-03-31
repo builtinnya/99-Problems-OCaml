@@ -1,0 +1,15 @@
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+*.opt
+*.run
+.omakedb
+.omakedb.lock
+*.omc
+tests

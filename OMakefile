@@ -1,0 +1,55 @@
+#
+# This project requires ocamlfind.
+#
+USE_OCAMLFIND = true
+
+if $(not $(OCAMLFIND_EXISTS))
+   eprintln(This project requires ocamlfind, but is was not found.)
+   eprintln(You need to install ocamlfind and run "omake --configure".)
+   exit 1
+
+#
+# Package names to pass to ocamlfind.
+#
+OCAMLPACKS[] =
+   oUnit
+   batteries
+
+#
+# Compile native or byte code?
+#
+NATIVE_ENABLED = $(OCAMLOPT_EXISTS)
+BYTE_ENABLED = $(not $(OCAMLOPT_EXISTS))
+
+#
+# Problem directories, which include answers (e.g. p01.ml) and tests (tests.ml).
+#
+PROBLEM_DIRS[] =
+   01-Working-with-lists
+   02-Arithmetic
+   03-Logic-and-Codes
+   04-Binary-Trees
+   05-Multiway-Trees
+   06-Graphs
+   07-Miscellaneous-Problems
+
+#
+# Build and run tests for each class of problems.
+#
+.SUBDIRS: $(PROBLEM_DIRS)
+   TEST_PROG = $(file tests)
+
+   if $(file-exists $(addsuffix .ml, $(TEST_PROG)))
+      .PHONY: test clean
+
+      ANSWER_FILES = $(removesuffix $(filter p%.ml, $(ls .)))
+
+      test: $(OCamlProgram $(TEST_PROG), $(TEST_PROG) $(ANSWER_FILES))
+         ./$(TEST_PROG)
+
+      clean:
+         rm -f *.cmx *.cmi *.o
+         rm -f $(TEST_PROG)
+         rm -f $(addsuffixes .opt .run, $(TEST_PROG))
+
+      .DEFAULT: test
