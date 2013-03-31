@@ -13,9 +13,10 @@ Currently in progress.
 
 ### Working with lists
 
-| Problem No. | Description | Status |
-| 01 | Last element | **Completed** |
-| 02 | Last two elements | not completed |
+| No. | Description       | Status        |
+|-----|-------------------|---------------|
+| 01  | Last element      | **Completed** |
+| 02  | Last two elements | Not completed |
 
 ### Arithmetic
 
