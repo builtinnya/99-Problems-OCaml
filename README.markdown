@@ -13,22 +13,87 @@ Currently in progress.
 
 ### Working with lists
 
-| No. | Description       | Status        |
-|-----|-------------------|---------------|
-| 01  | Last element      | **Completed** |
-| 02  | Last two elements | Not completed |
+| No. | Description          | Status        |   | No. | Description           | Status        |
+|-----|----------------------|---------------|---|-----|-----------------------|---------------|
+| 01  | Last element         | **Completed** |   | 15  | Replicate             | Not completed |
+| 02  | Last two elements    | Not completed |   | 16  | Drop every N'th       | Not completed |
+| 03  | K'th element         | Not completed |   | 17  | Split                 | Not completed |
+| 04  | Length               | Not completed |   | 18  | Slice                 | Not completed |
+| 05  | Reverse              | Not completed |   | 19  | Rotate                | Not completed |
+| 06  | Palindrome           | Not completed |   | 20  | Remove                | Not completed |
+| 07  | Flatten              | Not completed |   | 21  | Insert                | Not completed |
+| 08  | Eliminate duplicates | Not completed |   | 22  | Range                 | Not completed |
+| 09  | Pack duplicates      | Not completed |   | 23  | Random select         | Not completed |
+| 10  | Run-length           | Not completed |   | 24  | Random numbers        | Not completed |
+| 11  | Modified run-length  | Not completed |   | 25  | Random permutation    | Not completed |
+| 12  | Decode run-length    | Not completed |   | 26  | Combinations          | Not completed |
+| 13  | Direct run-length    | Not completed |   | 27  | Group                 | Not completed |
+| 14  | Duplicate            | Not completed |   | 28  | Sort by length        | Not completed |
 
 ### Arithmetic
 
+| No. | Description       | Status        |   | No. | Description             | Status        |
+|-----|-------------------|---------------|---|-----|-------------------------|---------------|
+| 29  | Prime             | Not completed |   | 35  | Improve 32              | Not completed |
+| 30  | GCD               | Not completed |   | 36  | Compare 32 and 35       | Not completed |
+| 31  | Coprime           | Not completed |   | 37  | List prime numbers      | Not completed |
+| 32  | Euler's totient   | Not completed |   | 38  | Goldbach's conjecture   | Not completed |
+| 33  | Prime factors     | Not completed |   | 39  | Goldbach compositions   | Not completed |
+| 34  | Prime factors 2   | Not completed |
+
 ### Logic and Codes
+
+| No. | Description                                        | Status        |
+|-----|----------------------------------------------------|---------------|
+| 40  | Truth tables for logical expressions (2 variables) | Not completed |
+| 41  | Truth tables for logical expressions               | Not completed |
+| 42  | Gray code                                          | Not completed |
+| 43  | Huffman code                                       | Not completed |
 
 ### Binary Trees
 
+| No. | Description         | Status        |   | No. | Description              | Status        |
+|-----|---------------------|---------------|---|-----|--------------------------|---------------|
+| 44  | Completely balanced | Not completed |   | 53  | Collect nodes at a level | Not completed |
+| 45  | Symmetric           | Not completed |   | 54  | Complete binary tree     | Not completed |
+| 46  | Binary search trees | Not completed |   | 55  | Layout 1                 | Not completed |
+| 47  | Generate-and-test   | Not completed |   | 56  | Layout 2                 | Not completed |
+| 48  | Height-balanced     | Not completed |   | 57  | Layout 3                 | Not completed |
+| 49  | 48 with N nodes     | Not completed |   | 58  | Stringify                | Not completed |
+| 50  | Count leaves        | Not completed |   | 59  | Preorder and inorder     | Not completed |
+| 51  | Collect leaves      | Not completed |   | 60  | Dotstring                | Not completed |
+| 52  | Collect internals   | Not completed |
+
 ### Multiway Trees
+
+| No. | Description          | Status        |
+|-----|----------------------|---------------|
+| 61  | Count nodes          | Not completed |
+| 62  | Node string          | Not completed |
+| 63  | Internal path length | Not completed |
+| 64  | Bottom-up order      | Not completed |
+| 65  | Lisp-like tree       | Not completed |
 
 ### Graphs
 
+| No. | Description           | Status        |   | No. | Description             | Status        |
+|-----|-----------------------|---------------|---|-----|-------------------------|---------------|
+| 66  | Conversions           | Not completed |   | 72  | Graph coloration        | Not completed |
+| 67  | Path                  | Not completed |   | 73  | Depth-first traversal   | Not completed |
+| 68  | Cycle                 | Not completed |   | 74  | Connected components    | Not completed |
+| 69  | Spanning trees        | Not completed |   | 75  | Bipartite graphs        | Not completed |
+| 70  | Minimal spanning tree | Not completed |   | 76  | K-regular simple graphs | Not completed |
+| 71  | Graph isomorphism     | Not completed |
+
 ### Miscellaneous Problems
+
+| No. | Description           | Status        |   | No. | Description      | Status        |
+|-----|-----------------------|---------------|---|-----|------------------|---------------|
+| 77  | Eight queens problem  | Not completed |   | 82  | Syntax checker   | Not completed |
+| 78  | Knight's tour         | Not completed |   | 83  | Sudoku           | Not completed |
+| 79  | Von Koch's conjecture | Not completed |   | 84  | Nonograms        | Not completed |
+| 80  | An arithmetic puzzle  | Not completed |   | 85  | Crossword puzzle | Not completed |
+| 81  | English number words  | Not completed |
 
 ## Building and Testing Answers
 
