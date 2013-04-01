@@ -1,6 +1,6 @@
 (** Problem 5: Reverse a list. *)
 
-(** Reverse [list]. *)
+(** Reverses [list]. *)
 let rec rev list =
   let rec recur list acc =
     match list with

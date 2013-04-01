@@ -46,6 +46,22 @@ let test_p05 =
   (test_function1 "p05" P05.rev
      ["reverse", [`a ; `b ; `c], [`c ; `b ; `a]])
 
+let test_p06 =
+  (test_function1 "p06" P06.is_palindrome
+     ["palindrome", [`x ; `a ; `m ; `a ; `x], true ;
+      "not palindrome", [`a ; `b], false])
+
+open P07
+let test_p07 =
+  (test_function1 "p07" P07.flatten
+     ["flatten", [One `a ; Many [One `b ; Many [One `c ; One `d] ; One `e]],
+      [`a ; `b ; `c ; `d ; `e]])
+
+let test_p08 =
+  (test_function1 "p08" P08.compress
+     ["compress", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`e;`e;`e;`e],
+      [`a;`b;`c;`a;`d;`e]])
+
 let test_suite =
   "Working with lists">:::
     [
@@ -54,6 +70,9 @@ let test_suite =
       test_p03;
       test_p04;
       test_p05;
+      test_p06;
+      test_p07;
+      test_p08;
     ]
 
 let _ =

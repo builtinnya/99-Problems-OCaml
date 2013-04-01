@@ -7,5 +7,5 @@
 let rec last list =
   match list with
     [] -> None
-  | [element] -> Some element
+  | [element]    -> Some element
   | head :: tail -> last tail

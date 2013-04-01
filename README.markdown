@@ -20,9 +20,9 @@ Currently in progress.
 | 03  | K'th element         | **Completed** |   | 17  | Split                 | Not completed |
 | 04  | Length               | **Completed** |   | 18  | Slice                 | Not completed |
 | 05  | Reverse              | **Completed** |   | 19  | Rotate                | Not completed |
-| 06  | Palindrome           | Not completed |   | 20  | Remove                | Not completed |
-| 07  | Flatten              | Not completed |   | 21  | Insert                | Not completed |
-| 08  | Eliminate duplicates | Not completed |   | 22  | Range                 | Not completed |
+| 06  | Palindrome           | **Completed** |   | 20  | Remove                | Not completed |
+| 07  | Flatten              | **Completed** |   | 21  | Insert                | Not completed |
+| 08  | Eliminate duplicates | **Completed** |   | 22  | Range                 | Not completed |
 | 09  | Pack duplicates      | Not completed |   | 23  | Random select         | Not completed |
 | 10  | Run-length           | Not completed |   | 24  | Random numbers        | Not completed |
 | 11  | Modified run-length  | Not completed |   | 25  | Random permutation    | Not completed |
