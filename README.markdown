@@ -16,10 +16,10 @@ Currently in progress.
 | No. | Description          | Status        |   | No. | Description           | Status        |
 |-----|----------------------|---------------|---|-----|-----------------------|---------------|
 | 01  | Last element         | **Completed** |   | 15  | Replicate             | Not completed |
-| 02  | Last two elements    | Not completed |   | 16  | Drop every N'th       | Not completed |
-| 03  | K'th element         | Not completed |   | 17  | Split                 | Not completed |
-| 04  | Length               | Not completed |   | 18  | Slice                 | Not completed |
-| 05  | Reverse              | Not completed |   | 19  | Rotate                | Not completed |
+| 02  | Last two elements    | **Completed** |   | 16  | Drop every N'th       | Not completed |
+| 03  | K'th element         | **Completed** |   | 17  | Split                 | Not completed |
+| 04  | Length               | **Completed** |   | 18  | Slice                 | Not completed |
+| 05  | Reverse              | **Completed** |   | 19  | Rotate                | Not completed |
 | 06  | Palindrome           | Not completed |   | 20  | Remove                | Not completed |
 | 07  | Flatten              | Not completed |   | 21  | Insert                | Not completed |
 | 08  | Eliminate duplicates | Not completed |   | 22  | Range                 | Not completed |
