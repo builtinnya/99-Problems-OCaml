@@ -23,12 +23,12 @@ Currently in progress.
 | 06  | Palindrome           | **Completed** |   | 20  | Remove                | Not completed |
 | 07  | Flatten              | **Completed** |   | 21  | Insert                | Not completed |
 | 08  | Eliminate duplicates | **Completed** |   | 22  | Range                 | Not completed |
-| 09  | Pack duplicates      | Not completed |   | 23  | Random select         | Not completed |
-| 10  | Run-length           | Not completed |   | 24  | Random numbers        | Not completed |
-| 11  | Modified run-length  | Not completed |   | 25  | Random permutation    | Not completed |
-| 12  | Decode run-length    | Not completed |   | 26  | Combinations          | Not completed |
-| 13  | Direct run-length    | Not completed |   | 27  | Group                 | Not completed |
-| 14  | Duplicate            | Not completed |   | 28  | Sort by length        | Not completed |
+| 09  | Pack duplicates      | **Completed** |   | 23  | Random select         | Not completed |
+| 10  | Run-length           | **Completed** |   | 24  | Random numbers        | Not completed |
+| 11  | Modified run-length  | **Completed** |   | 25  | Random permutation    | Not completed |
+| 12  | Decode run-length    | **Completed** |   | 26  | Combinations          | Not completed |
+| 13  | Direct run-length    | **Completed** |   | 27  | Group                 | Not completed |
+| 14  | Duplicate            | **Completed** |   | 28  | Sort by length        | Not completed |
 
 ### Arithmetic
 

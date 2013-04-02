@@ -63,9 +63,35 @@ let test_p08 =
       [`a;`b;`c;`a;`d;`e]])
 
 let test_p09 =
-  (test_function1 "p09" P09.pac
+  (test_function1 "p09" P09.pack
      ["pack", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`d;`e;`e;`e;`e],
       [[`a;`a;`a;`a]; [`b]; [`c;`c]; [`a;`a]; [`d;`d]; [`e;`e;`e;`e]]])
+
+let test_p10 =
+  (test_function1 "p10" P10.encode
+     ["run-length", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`e;`e;`e;`e],
+      [4,`a ; 1,`b ; 2,`c ; 2,`a ; 1,`d ; 4,`e]])
+
+open P11
+let test_p11 =
+  (test_function1 "p11" P11.encode
+     ["modified run-length", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`e;`e;`e;`e],
+      [Many (4,`a) ; One `b ; Many (2,`c) ; Many (2,`a) ; One `d ; Many (4,`e)]])
+
+let test_p12 =
+  (test_function1 "p12" P12.decode
+     ["decode run-length", [Many (4,`a); One `b; Many (2,`c); Many (2,`a);
+                            One `d; Many (4,`e)],
+      [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`e;`e;`e;`e]])
+
+let test_p13 =
+  (test_function1 "p13" P13.encode
+     ["modified run-length", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`e;`e;`e;`e],
+      [Many (4,`a) ; One `b ; Many (2,`c) ; Many (2,`a) ; One `d ; Many (4,`e)]])
+
+let test_p14 =
+  (test_function1 "p14" P14.duplicate
+     ["duplicate", [`a;`b;`c;`c;`d], [`a;`a;`b;`b;`c;`c;`c;`c;`d;`d]])
 
 let test_suite =
   "Working with lists">:::
@@ -79,6 +105,11 @@ let test_suite =
       test_p07;
       test_p08;
       test_p09;
+      test_p10;
+      test_p11;
+      test_p12;
+      test_p13;
+      test_p14;
     ]
 
 let _ =
