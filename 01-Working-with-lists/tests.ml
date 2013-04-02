@@ -197,7 +197,46 @@ let test_p23 =
         (fun () ->
           (assert_equal_things
              [`g ; `d ; `a]
-             (P23.rand_select [`a;`b;`c;`d;`e;`f;`g;`h] 3)))
+             (P23.rand_select [`a;`b;`c;`d;`e;`f;`g;`h;] 3)))
+    ]
+
+let test_p24 =
+  "p24">:::
+    [
+      "draw six different integers form 1..49">::
+        (fun () ->
+          (assert_equal_things
+             (* The following list is the correct answer in the original site.
+              * (http://ocaml.org/tutorials/99problems.html)
+              * Obviously, it depends on how to remove a picked element from a
+              * list. This answer cannot be obtained when you keep the order of
+              * the list during picking elements.
+              * It is originating from [acc @ t] part of the original code,
+              * where [acc] is a reverse-ordered accumulation of the elements.
+              *)
+             (* [10; 20; 44; 22; 41; 2] *)
+
+             (* You will obtain the following answer if you keep
+              * the order of the list during picking. *)
+             [11; 23; 44; 20; 41; 2]
+
+             (P24.lotto_select 6 49)))
+    ]
+
+let test_p25 =
+  "p25">:::
+    [
+      "random permutation">::
+        (fun () ->
+          (assert_equal_things
+             (* See comments on [test_p24] above. The same reason applies. *)
+             (* ['a'; 'e'; 'f'; 'b'; 'd'; 'c'] *)
+
+             (* You will obtain the following answer if you keep
+              * the order of the list during picking. *)
+             ['e'; 'a'; 'f'; 'b'; 'd'; 'c']
+
+             (P25.permutation ['a';'b';'c';'d';'e';'f'])))
     ]
 
 let test_suite =
@@ -226,6 +265,8 @@ let test_suite =
       test_p21;
       test_p22;
       test_p23;
+      test_p24;
+      test_p25;
     ]
 
 let _ =

@@ -5,17 +5,16 @@
 (** Extracts [n] elements randomly from [list] *)
 let rec rand_select list n =
 
-  let extract list =
-    let len = List.length list in
-    if len = 0 then failwith "Cannot extract from an empty list"
-    else let i = Random.int len in
-           (List.nth list i), (P20.remove_at i list)
+  let extract_rand list len =
+    let i = Random.int len in
+    List.nth list i, P20.remove_at i list
   in
 
-  let rec recur acc count list =
+  let rec recur acc count list len =
     if count = n then acc
-    else let e, r = extract list in
-         recur (e :: acc) (count + 1) r
+    else let e, r = extract_rand list len in
+         recur (e :: acc) (count + 1) r (len - 1)
   in
 
-  recur [] 0 list
+  let len = List.length list in
+  recur [] 0 list len
