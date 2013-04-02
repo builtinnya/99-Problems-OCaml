@@ -15,12 +15,12 @@ Currently in progress.
 
 | No. | Description          | Status        |   | No. | Description           | Status        |
 |-----|----------------------|---------------|---|-----|-----------------------|---------------|
-| 01  | Last element         | **Completed** |   | 15  | Replicate             | Not completed |
-| 02  | Last two elements    | **Completed** |   | 16  | Drop every N'th       | Not completed |
-| 03  | K'th element         | **Completed** |   | 17  | Split                 | Not completed |
-| 04  | Length               | **Completed** |   | 18  | Slice                 | Not completed |
-| 05  | Reverse              | **Completed** |   | 19  | Rotate                | Not completed |
-| 06  | Palindrome           | **Completed** |   | 20  | Remove                | Not completed |
+| 01  | Last element         | **Completed** |   | 15  | Replicate             | **Completed** |
+| 02  | Last two elements    | **Completed** |   | 16  | Drop every N'th       | **Completed** |
+| 03  | K'th element         | **Completed** |   | 17  | Split                 | **Completed** |
+| 04  | Length               | **Completed** |   | 18  | Slice                 | **Completed** |
+| 05  | Reverse              | **Completed** |   | 19  | Rotate                | **Completed** |
+| 06  | Palindrome           | **Completed** |   | 20  | Remove                | **Completed** |
 | 07  | Flatten              | **Completed** |   | 21  | Insert                | Not completed |
 | 08  | Eliminate duplicates | **Completed** |   | 22  | Range                 | Not completed |
 | 09  | Pack duplicates      | **Completed** |   | 23  | Random select         | Not completed |

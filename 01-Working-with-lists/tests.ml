@@ -93,6 +93,77 @@ let test_p14 =
   (test_function1 "p14" P14.duplicate
      ["duplicate", [`a;`b;`c;`c;`d], [`a;`a;`b;`b;`c;`c;`c;`c;`d;`d]])
 
+let test_p15 =
+  "p15">:::
+    [
+      "replicate three times">::
+        (fun () ->
+          (assert_equal_things
+             [`a;`a;`a;`b;`b;`b;`c;`c;`c] (P15.replicate [`a;`b;`c] 3)))
+    ]
+
+let test_p16 =
+  "p16">:::
+    [
+      "drop every third element">::
+        (fun () ->
+          (assert_equal_things
+             [`a;`b;`d;`e;`g;`h;`j]
+             (P16.drop [`a;`b;`c;`d;`e;`f;`g;`h;`i;`j] 3)))
+    ]
+
+let test_p17 =
+  "p17">:::
+    [
+      "split into two parts; the first part contains three elements">::
+        (fun () ->
+          (assert_equal_things
+             ([`a;`b;`c] , [`d;`e;`f;`g;`h;`i;`j])
+             (P17.split [`a;`b;`c;`d;`e;`f;`g;`h;`i;`j] 3))) ;
+
+      "what if the given number is greater than the length of the list?">::
+        (fun () ->
+          (assert_equal_things
+             ([`a; `b; `c; `d], [])
+             (P17.split [`a;`b;`c;`d] 5)))
+    ]
+
+let test_p18 =
+  "p18">:::
+    [
+      "slice 2 6">::
+        (fun () ->
+          (assert_equal_things
+             [`c;`d;`e;`f;`g]
+             (P18.slice [`a;`b;`c;`d;`e;`f;`g;`h;`i;`j] 2 6)))
+    ]
+
+let test_p19 =
+  "p19">:::
+    [
+      "rotate three places to the left">::
+        (fun () ->
+          (assert_equal_things
+             [`d;`e;`f;`g;`h;`a;`b;`c]
+             (P19.rotate [`a;`b;`c;`d;`e;`f;`g;`h] 3))) ;
+
+      "rotate two places to the right">::
+        (fun () ->
+          (assert_equal_things
+             [`g;`h;`a;`b;`c;`d;`e;`f]
+             (P19.rotate [`a;`b;`c;`d;`e;`f;`g;`h] (-2))))
+    ]
+
+let test_p20 =
+  "p20">:::
+    [
+      "remove the second element">::
+        (fun () ->
+          (assert_equal_things
+             [`a;`c;`d]
+             (P20.remove_at 1 [`a;`b;`c;`d])))
+    ]
+
 let test_suite =
   "Working with lists">:::
     [
@@ -110,6 +181,12 @@ let test_suite =
       test_p12;
       test_p13;
       test_p14;
+      test_p15;
+      test_p16;
+      test_p17;
+      test_p18;
+      test_p19;
+      test_p20;
     ]
 
 let _ =
