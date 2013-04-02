@@ -62,6 +62,11 @@ let test_p08 =
      ["compress", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`e;`e;`e;`e],
       [`a;`b;`c;`a;`d;`e]])
 
+let test_p09 =
+  (test_function1 "p09" P09.pac
+     ["pack", [`a;`a;`a;`a;`b;`c;`c;`a;`a;`d;`d;`e;`e;`e;`e],
+      [[`a;`a;`a;`a]; [`b]; [`c;`c]; [`a;`a]; [`d;`d]; [`e;`e;`e;`e]]])
+
 let test_suite =
   "Working with lists">:::
     [
@@ -73,6 +78,7 @@ let test_suite =
       test_p06;
       test_p07;
       test_p08;
+      test_p09;
     ]
 
 let _ =
