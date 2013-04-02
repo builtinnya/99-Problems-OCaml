@@ -164,6 +164,42 @@ let test_p20 =
              (P20.remove_at 1 [`a;`b;`c;`d])))
     ]
 
+let test_p21 =
+  "p21">:::
+    [
+      "insert">::
+        (fun () ->
+          (assert_equal_things
+             [`a;`alfa;`b;`c;`d]
+             (P21.insert_at `alfa 1 [`a;`b;`c;`d])))
+    ]
+
+let test_p22 =
+  "p22">:::
+    [
+      "range start < last">::
+        (fun () ->
+          (assert_equal_things
+             [4;5;6;7;8;9]
+             (P22.range 4 9))) ;
+
+      "range start > last">::
+        (fun () ->
+          (assert_equal_things
+             [9;8;7;6;5;4]
+             (P22.range 9 4)))
+    ]
+
+let test_p23 =
+  "p23">:::
+    [
+      "extract randomly">::
+        (fun () ->
+          (assert_equal_things
+             [`g ; `d ; `a]
+             (P23.rand_select [`a;`b;`c;`d;`e;`f;`g;`h] 3)))
+    ]
+
 let test_suite =
   "Working with lists">:::
     [
@@ -187,6 +223,9 @@ let test_suite =
       test_p18;
       test_p19;
       test_p20;
+      test_p21;
+      test_p22;
+      test_p23;
     ]
 
 let _ =

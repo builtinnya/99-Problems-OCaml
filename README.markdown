@@ -21,9 +21,9 @@ Currently in progress.
 | 04  | Length               | **Completed** |   | 18  | Slice                 | **Completed** |
 | 05  | Reverse              | **Completed** |   | 19  | Rotate                | **Completed** |
 | 06  | Palindrome           | **Completed** |   | 20  | Remove                | **Completed** |
-| 07  | Flatten              | **Completed** |   | 21  | Insert                | Not completed |
-| 08  | Eliminate duplicates | **Completed** |   | 22  | Range                 | Not completed |
-| 09  | Pack duplicates      | **Completed** |   | 23  | Random select         | Not completed |
+| 07  | Flatten              | **Completed** |   | 21  | Insert                | **Completed** |
+| 08  | Eliminate duplicates | **Completed** |   | 22  | Range                 | **Completed** |
+| 09  | Pack duplicates      | **Completed** |   | 23  | Random select         | **Completed** |
 | 10  | Run-length           | **Completed** |   | 24  | Random numbers        | Not completed |
 | 11  | Modified run-length  | **Completed** |   | 25  | Random permutation    | Not completed |
 | 12  | Decode run-length    | **Completed** |   | 26  | Combinations          | Not completed |
