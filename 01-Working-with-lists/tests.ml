@@ -239,6 +239,16 @@ let test_p25 =
              (P25.permutation ['a';'b';'c';'d';'e';'f'])))
     ]
 
+let test_p26 =
+  "p26">:::
+    [
+      "all C(4, 2) possibilities">::
+        (fun () ->
+          (assert_equal_things
+             [[`c;`d]; [`b;`d]; [`b;`c]; [`a;`d]; [`a;`c]; [`a;`b]]
+             (P26.extract 2 [`a;`b;`c;`d])))
+    ]
+
 let test_suite =
   "Working with lists">:::
     [
@@ -267,6 +277,7 @@ let test_suite =
       test_p23;
       test_p24;
       test_p25;
+      test_p26;
     ]
 
 let _ =
