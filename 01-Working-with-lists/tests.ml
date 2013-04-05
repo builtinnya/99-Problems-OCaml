@@ -249,6 +249,52 @@ let test_p26 =
              (P26.extract 2 [`a;`b;`c;`d])))
     ]
 
+let test_p27 =
+  "p27">:::
+    [
+      "group into 2 disjoint subgroups of 2 and 1 elements">::
+        (fun () ->
+          (assert_equal_things
+             (* Again, the following list is the correct answer in the
+              * original site. The order depends on how we compute and
+              * is not what we should care. *)
+             (* [[[`a; `b]; [`c]]; [[`a; `c]; [`b]]; [[`b; `c]; [`a]]; *)
+             (*  [[`a; `b]; [`d]]; [[`a; `c]; [`d]]; [[`b; `c]; [`d]]; *)
+             (*  [[`a; `d]; [`b]]; [[`b; `d]; [`a]]; [[`a; `d]; [`c]]; *)
+             (*  [[`b; `d]; [`c]]; [[`c; `d]; [`a]]; [[`c; `d]; [`b]]] *)
+
+             [[[`a; `b]; [`c]]; [[`a; `b]; [`d]]; [[`a; `c]; [`b]];
+              [[`a; `c]; [`d]]; [[`a; `d]; [`b]]; [[`a; `d]; [`c]];
+              [[`b; `c]; [`a]]; [[`b; `c]; [`d]]; [[`b; `d]; [`a]];
+              [[`b; `d]; [`c]]; [[`c; `d]; [`a]]; [[`c; `d]; [`b]]]
+
+             (P27.group [`a;`b;`c;`d] [2;1])
+          ))
+    ]
+
+let test_p28 =
+  "p28">:::
+    [
+      "sort by length">::
+        (fun () ->
+          (assert_equal_things
+             (* The order of lists which have equal length is not specified. *)
+             [[`o]; [`d; `e]; [`d; `e]; [`m; `n]; [`f; `g; `h]; [`a; `b; `c];
+              [`i; `j; `k; `l]]
+             (P28.length_sort [[`a;`b;`c]; [`d;`e]; [`f;`g;`h]; [`d;`e];
+                               [`i;`j;`k;`l]; [`m;`n]; [`o] ]))) ;
+
+      "sort by frequency of lengths">::
+        (fun () ->
+          (assert_equal_things
+             (* The order of lists which have equal frequency is not specified.
+             *)
+             [[`o]; [`i; `j; `k; `l]; [`a; `b; `c]; [`f; `g; `h]; [`m; `n];
+              [`d; `e]; [`d; `e]]
+             (P28.frequency_sort [[`a;`b;`c]; [`d;`e]; [`f;`g;`h]; [`d;`e];
+                                  [`i;`j;`k;`l]; [`m;`n]; [`o] ])))
+    ]
+
 let test_suite =
   "Working with lists">:::
     [
@@ -278,6 +324,8 @@ let test_suite =
       test_p24;
       test_p25;
       test_p26;
+      test_p27;
+      test_p28;
     ]
 
 let _ =

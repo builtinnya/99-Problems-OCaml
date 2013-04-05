@@ -26,9 +26,9 @@ Currently in progress.
 | 09  | Pack duplicates      | **Completed** |   | 23  | Random select         | **Completed** |
 | 10  | Run-length           | **Completed** |   | 24  | Random numbers        | **Completed** |
 | 11  | Modified run-length  | **Completed** |   | 25  | Random permutation    | **Completed** |
-| 12  | Decode run-length    | **Completed** |   | 26  | Combinations          | Not completed |
-| 13  | Direct run-length    | **Completed** |   | 27  | Group                 | Not completed |
-| 14  | Duplicate            | **Completed** |   | 28  | Sort by length        | Not completed |
+| 12  | Decode run-length    | **Completed** |   | 26  | Combinations          | **Completed** |
+| 13  | Direct run-length    | **Completed** |   | 27  | Group                 | **Completed** |
+| 14  | Duplicate            | **Completed** |   | 28  | Sort by length        | **Completed** |
 
 ### Arithmetic
 
