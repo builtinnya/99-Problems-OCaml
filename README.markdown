@@ -36,8 +36,8 @@ Currently in progress.
 |-----|-------------------|---------------|---|-----|-------------------------|---------------|
 | 29  | Prime             | **Completed** |   | 35  | Improve 32              | Not completed |
 | 30  | GCD               | **Completed** |   | 36  | Compare 32 and 35       | Not completed |
-| 31  | Coprime           | Not completed |   | 37  | List prime numbers      | Not completed |
-| 32  | Euler's totient   | Not completed |   | 38  | Goldbach's conjecture   | Not completed |
+| 31  | Coprime           | **Completed** |   | 37  | List prime numbers      | Not completed |
+| 32  | Euler's totient   | **Completed** |   | 38  | Goldbach's conjecture   | Not completed |
 | 33  | Prime factors     | Not completed |   | 39  | Goldbach compositions   | Not completed |
 | 34  | Prime factors 2   | Not completed |
 
