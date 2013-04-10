@@ -52,6 +52,35 @@ let test_p32 =
      ["phi(10)", 10, 4 ;
       "phi(13)", 13, 12])
 
+let test_p33 =
+  (test_function1 "p33" P33.factors
+     ["prime factors", 315, [3; 3; 5; 7]])
+
+let test_p34 =
+  (test_function1 "p34" P34.factors
+     ["prime factors", 315, [3, 2; 5, 1; 7, 1]])
+
+let test_p35 =
+  (test_function1 "p35" P35.phi_improved
+     ["phi(10)", 10, 4 ;
+      "phi(13)", 13, 12])
+
+let test_p36 =
+  let n = 10090 in
+  let title = Printf.sprintf "phi(%d)" n in
+  "p36">:::
+    [
+      title>::
+        (fun () ->
+          (assert_equal_things
+             () (P36.timeit P32.phi n))) ;
+
+      ("improved " ^ title)>::
+        (fun () ->
+          (assert_equal_things
+             () (P36.timeit P35.phi_improved n))) ;
+    ]
+
 let test_suite =
   "Arithmetic">:::
     [
@@ -59,6 +88,10 @@ let test_suite =
       test_p30;
       test_p31;
       test_p32;
+      test_p33;
+      test_p34;
+      test_p35;
+      test_p36;
     ]
 
 let _ =
